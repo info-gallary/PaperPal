@@ -1,0 +1,22 @@
+data: { "log": "Starting file extraction..." }
+
+data: { "log": "Running spellchecker..." }
+
+data: { "log": "Found 10 spelling errors.", "errors": ["html", "sevral", "maketitle", "documentclass", "api", "propurly", "wroking", "typoos", "texttt", "frontend"] }
+
+data: { "log": "Bifurcating text into conceptual chunks..." }
+
+data: { "log": "Split document into 1 chunks.", "total_chunks": 1 }
+
+data: { "log": "Processing chunk 1/1 through Agent sequence (Format -> Review -> Polish)..." }
+
+data: { "log": "Chunk 1 successfully formatted." }
+
+data: { "log": "Stitching and applying global Markdown cleanup..." }
+
+data: { "log": "Sending to LaTeX Converter Agent..." }
+
+data: { "log": "LaTeX Compilation complete. Streaming final payload." }
+
+data: {"is_final": true, "markdown": "# Dummy LaTeX Test Document\n## Introduction\nThis document serves as a test payload, as stated by Smith [1]. It checks that spelling errors, Markdown chunks, and final LaTeX compilation algorithms pass data cleanly through the `api.py` Server-Sent Events stream to the `index.html` frontend. The Antigravity QA Agent will verify its functionality.\n\n## Background\nThere are sevral typos in this paragrah that the SpellChecker algorithm inside `api.py` should flag automatically and stream down prior to compilation, ensuring the system's robustness.\n\n## References\n[1] Smith. (2023). *Unknown Title*. Unknown Publication.", "latex": "\\documentclass[journal]{IEEEtran}\n\\usepackage{cite}\n\n\\begin{document}\n\n\\title{Dummy LaTeX Test Document}\n\\author{Author Name}\n\\maketitle\n\n\\section{Introduction}\nThis document serves as a test payload, as stated by Smith~\\cite{smith2023}. It checks that spelling errors, and final LaTeX compilation algorithms pass data cleanly through the \\texttt{api.py} Server-Sent Events stream to the \\texttt{index.html} frontend. The Antigravity QA Agent will verify its functionality.\n\n\\section{Background}\nThere are sevral typos in this paragrah that the SpellChecker algorithm inside \\texttt{api.py} should flag automatically and stream down prior to compilation, ensuring the system's robustness.\n\n\\section*{References}\n\\begin{thebibliography}{1}\n\\bibitem{smith2023} Smith, ``Unknown Title,'' Unknown Publication, 2023.\n\\end{thebibliography}\n\n\\end{document}", "errors": ["html", "sevral", "maketitle", "documentclass", "api", "propurly", "wroking", "typoos", "texttt", "frontend"], "raw_chunks": ["\\documentclass{article}\r\n\\begin{document}\r\n\r\n\\title{Dummy LaTeX Test Document}\r\n\\author{Antigravity QA Agent}\r\n\\maketitle\r\n\r\n\\begin{abstract}\r\nThis is a small dummy manuscript purely designed to check that spelling errors, Markdown chunks, and final LaTeX compilation algorithms pass data cleanly through the \\texttt{api.py} Server-Sent Events stream to the \\texttt{index.html} frontend. We want to test that it is wroking propurly.\r\n\\end{abstract}\r\n\r\n\\section{Introduction}\r\nAs stated by Smith~\\cite{smith2023}, this document serves as a test payload. There are sevral typoos in this paragraph that the SpellChecker algorithm inside \\texttt{api.py} should flag automatically and stream down prior to compilation.\r\n\r\n\\end{document}"]}
+
