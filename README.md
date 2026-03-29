@@ -1,4 +1,4 @@
-# 🎓 FormatForge AI — Agent Paperpal
+# 🎓 Docling AI — Agent Paperpal
 
 > Agentic Manuscript Formatting System | HackaMined 2026
 
