@@ -1,6 +1,6 @@
 <div align="center">
 
-# DocLing AI
+# Docling AI
 
 ### Agentic Academic Manuscript Formatter
 
